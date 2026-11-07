@@ -267,8 +267,8 @@ $("copy").onclick=async()=>{
   toast("Pesan tersalin. Tempel di Saluran WA.");
 };
 
-const SUPABASE_URL="ISI_URL_PROJECT";
-const SUPABASE_KEY="ISI_ANON_KEY";
+const SUPABASE_URL="https://ramnvwnbhxfrgdbooift.supabase.co";
+const SUPABASE_KEY="sb_publishable_f4mCYlkqkgSHuecNV79cqQ_snUUtGLN";
 
 async function load(){
   const [a,b]=await Promise.all([sb.from("tasks").select("*").order("dl").order("ts"),sb.from("notes").select("*")]);
